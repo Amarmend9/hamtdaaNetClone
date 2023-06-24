@@ -1,0 +1,280 @@
+:root {
+  --primary-color: #0055FF;
+  --light-grey : #EEEEEE;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fredoka", sans-serif;
+  background-color: #e3ecf5;
+}
+
+a {
+  margin: 0 5px; 
+  padding: 18px;
+  border: none;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+i {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+}
+
+.btn {
+  color: #fff;
+  padding: 20px 10px;
+  background-color: #2ECC71;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Container */
+#container {
+  display: flex;
+}
+
+/* Multiline codes */
+nav,
+#main-menu, 
+#account-page,
+#logout, 
+#user-profile,
+#sections{
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+/* Navigation Menu */
+nav {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100vw;
+  z-index: 2;
+  border-radius: 0;
+}
+
+#logo a{
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+#middle-menu {
+  display: flex;
+}
+
+#middle-menu a 
+{
+  background-color: var(--light-grey);
+}
+
+#middle-menu i {
+  color: #888;
+}
+
+#search {
+  background-color: var(--light-grey);
+  padding: 10px;
+  display: flex;
+  place-items: center;
+  border-radius: 30px;
+}
+
+#search i {
+  color: #ced4da;
+  padding: 0 10px;
+}
+
+#search input {
+  border: none;
+  background-color: var(--light-grey);
+  padding: 5px;
+  min-width: 300px;
+}
+
+/* Sidebar Menu */
+#sidebar-menu {
+  margin-top: 85px;
+  overflow-y: scroll;
+  height: 90vh;
+}
+
+#sidebar-menu::-webkit-scrollbar {
+  background-color: inherit;
+  width: 0.15em;
+}
+
+#sidebar-menu::-webkit-scrollbar-thumb {
+  width: 0.2em;
+  background-color: #777777;
+}
+
+#sidebar-menu #main-menu, 
+#sidebar-menu #account-page,
+#sidebar-menu #logout {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 10px 15px;
+  padding: 15px 10px;
+
+}
+
+#sidebar-menu p, a {
+  color: #888888;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+}
+
+#sidebar-menu a:hover {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+#sidebar-menu p {
+  font-size: 12px;
+  padding: 10px 25px;
+}
+
+#sidebar-menu i {
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin-right: 20px;
+  font-size: 1rem;
+}
+
+#sidebar-menu #main-menu i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #fff;
+}
+
+#sidebar-menu #account-page i {
+  font-size: 1.4rem;
+}
+
+#sidebar-menu .fa-house, 
+#sidebar-menu .fa-globe {
+  background: linear-gradient(135deg, #05f, #09f) !important;
+}
+
+#sidebar-menu .fa-calendar {
+  background: linear-gradient(90deg, #ee0979, #ff6a00) !important;
+}
+
+#sidebar-menu .fa-location-dot {
+  background: linear-gradient(90deg, #f2994a, #f2c94c) !important;
+}
+
+#sidebar-menu .fa-user {
+  background: linear-gradient(90deg, #0575e6, #021b79) !important;
+}
+
+#sidebar-menu .fa-user-group {
+  background: linear-gradient(90deg, #e44d26, #f16529) !important;
+}
+
+/* Main */
+#main {
+  margin: 100px auto auto auto;
+}
+
+/* User Profile */
+#user-profile {
+  padding: 20px;
+}
+
+#user-profile,
+#cover,
+#user-profile span {
+font-weight: bold;
+border-bottom-right-radius: 0;
+border-bottom-left-radius: 0;
+}
+
+/* Cover */
+#user-profile #cover {
+  background: url(img/Screenshot2023-06-24195031.png);
+  min-width: 650px;
+  min-height: 250px;
+  position: relative; 
+  border-radius: 15px;
+}
+
+#user-profile #cover a {
+  position: absolute;
+  top: 20px;
+  z-index: 1;
+}
+
+/* Cover middle */
+#cover-middle {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+
+/* Profile image */
+#profile {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  margin-top: -50px;
+  z-index: 1;
+  padding: 2px;
+  border-radius: 50%;
+}
+
+#profile #white-bg {
+  background-color: #fff;
+  padding: 2px 8px;
+  border-radius: 50%;
+}
+
+#profile i {
+  padding: 8px;
+  color: #fff;
+  background: linear-gradient(320deg, #ee0979 0%, #0055FF 100%);
+  border-radius: 50%;
+  font-size: 40px;
+  margin-bottom: 35px;
+}
+
+.right i {
+  font-size: 1rem;
+  color: #333;
+}
+
+.right #notifications {
+  border: none;
+  background-color: var(--light-grey);
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 1px;
+}
+
+#sections {
+  margin-top: 1px;
+  padding: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#sections a {
+  font-size: 0.7rem;
+}
+
